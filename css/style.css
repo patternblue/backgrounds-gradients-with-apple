@@ -11,3 +11,22 @@
 	text-decoration: none;
 }
 */
+
+header{
+	position: absolute;
+	top: 0;
+	height: 50px;
+	width: 100%;
+
+	/* gradient */
+	background: #466368;
+	background: -webkit-linear-gradient(to right, #0f0, #f00);
+	background:    -moz-linear-gradient(to right, #0f0, #f00);
+	background:         linear-gradient(to right, #0f0, #f00);
+}
+header li{
+	display: inline;
+}
+#main{
+	margin-top: 50px;
+}
