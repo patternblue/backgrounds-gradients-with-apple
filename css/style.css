@@ -5,15 +5,6 @@
 	        box-sizing: border-box;
 }
 
-/*misc*/
-a{
-	/*color: #222;*/
-	text-decoration: none;
-}
-.clearfix {
-	overflow: auto;
-}
-
 body{
 	font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -38,20 +29,19 @@ header ul{
 }
 header a{
 	color: #ddd;
-	/*font-size: 16px;*/
+	font-size: 15px;
 	letter-spacing: normal;
 	font-weight: 300;
 }
 header li{
-	display: inline;
-	padding: 0 28px;
+	float: left;
+	width: 10%;
+	padding: 0 26px;
 }
 #main{
 	position: relative;
-	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
 	margin-top: 50px;
 	width: 100%;
-	/*height: 540px;*/
 }
 #front-page{
 	position: relative;
@@ -60,29 +50,22 @@ header li{
 }
 .title{
 	width: 480px;
-/*	height: 450px;
-*/	background: url("../img/iphone_6s_large.png") 50% 0 no-repeat;
-	/*background-size: 100% auto;*/
+	background: url("../img/iphone_6s_large.png") 50% 0 no-repeat;
 	position: absolute;
 	left: 49%;
 	top: 35%;
 	text-align: center;
-	/*bottom: 0;*/
-	/*margin: auto 0;*/
-	/*top: 39%;*/
-	
-	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
 }
 .title h1{
 	height: 61px;
 	margin-bottom: 10px;
+	visibility: hidden;
 }
 .title h2{
 	color: #333;
 	font-style: normal;
 	font-size: 40px;
 	font-family: inherit;
-	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
 	line-height: 1.1;
 	font-weight: 200;
 	margin-bottom: 0.7em;
@@ -90,24 +73,14 @@ header li{
 }
 .title a{
 	margin: 0 10px;
-	font-size: 24px;
+	font-size: 22px;
 }
 .title a, .adapter-recall-program{
-	/*text-decoration: none;*/
 	font-weight: 200;
-	font-style: normal;
 	font-family: inherit;
-	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
-	/*letter-spacing: normal;*/
 }
-/*.subtitle{
-	text-align: center;
-	margin-top: 100px;
-}*/
 #banner{
 	height: 200px;
-	/*background-size: contain;*/
-	/*background-origin: border-box;*/
 }
 #banner .image{
 	background-clip: content-box;
@@ -129,18 +102,12 @@ header li{
 	background: url("../img/macbook_large.jpg") 50% 0 no-repeat;
 }
 #support-banner{
-	/*height: 75px;*/
 	padding: 25px 0;
-	/*width: 100%;*/
 	text-align: center;
 }
 .adapter-recall-program{
-	/*display: block;*/
-	/*margin: auto 0;*/
-	/*margin: 15px 0;*/
 	font-size: 16px;
 	font-weight: 300;
-	/*margin: auto 0;*/
 }
 footer{
 	background: #eee;
@@ -148,9 +115,6 @@ footer{
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
-/*footer, footer a{
-	color: #777;	
-}*/
 footer h3{
 	color: #222;
 	font-weight: 500;
@@ -162,24 +126,18 @@ footer h3, footer li, footer p{
 	border-bottom: 1px solid #ddd;
 }
 #footer-nav, #footer-about{
-	/*position: relative;*/
 	width: 1000px;
 	margin: 0 auto;
-	/*margin-top: 10px;*/
 }
 .columns{
 	margin-bottom: 30px;
 }
-
-
 .col{
 	float: left;
 	width: 20%;
 }
-
 .footer-nav-easy-shorcut{
 	clear: both;
-	/*margin-top: 30px;*/
 }
 .footer-nav-easy-shorcut, #footer-about{
 	padding: 10px 0;
@@ -190,7 +148,6 @@ footer h3, footer li, footer p{
 #footer-about li:not(:first-child){
 	padding-left: 12px;
 	padding-right: 12px;
-	/*padding-bottom: 10px;*/
 }
 #footer-about li img{
 	float: left;
@@ -201,7 +158,6 @@ footer h3, footer li, footer p{
 .bordered{
 	border-right: 1px solid #ddd;
 }
-
 
 /*misc*/
 .left{
@@ -215,4 +171,16 @@ footer h3, footer li, footer p{
 }
 .title a, .adapter-recall-program, .footer-nav-easy-shorcut a{
 	color: #08c;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: #888;
+	cursor: pointer;
+}
+.clearfix {
+	overflow: auto;
 }
