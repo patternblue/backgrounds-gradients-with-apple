@@ -1,33 +1,218 @@
 * {
-	border: 1px dotted red !important;
+	/*border: 1px dotted red !important;*/
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
 
 /*misc*/
-/*a{
-	color: #222;
+a{
+	/*color: #222;*/
 	text-decoration: none;
 }
-*/
+.clearfix {
+	overflow: auto;
+}
 
+body{
+	font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 header{
 	position: absolute;
 	top: 0;
-	height: 48px;
+	height: 45px;
 	width: 100%;
 
 	/* gradient */
 	background: #466368;
-	background: -webkit-linear-gradient(to right, #333, #444, #333);
-	background:    -moz-linear-gradient(to right, #333, #444, #333);
-	background:         linear-gradient(to right, #333, #444, #333);
+	background: -webkit-linear-gradient(to right, #2e2e2e, #393939, #2e2e2e);
+	background:    -moz-linear-gradient(to right, #2e2e2e, #393939, #2e2e2e);
+	background:         linear-gradient(to right, #2e2e2e, #393939, #2e2e2e);
+}
+header ul{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	top: 25%;
+	text-align: center;
+}
+header a{
+	color: #ddd;
+	/*font-size: 16px;*/
+	letter-spacing: normal;
+	font-weight: 300;
 }
 header li{
 	display: inline;
+	padding: 0 28px;
 }
 #main{
 	position: relative;
+	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
 	margin-top: 50px;
+	width: 100%;
+	/*height: 540px;*/
+}
+#front-page{
+	position: relative;
+	height: 600px;
+	background:  url("../img/iphone-6s-change_large.jpg") 21% 0 no-repeat;
+}
+.title{
+	width: 480px;
+/*	height: 450px;
+*/	background: url("../img/iphone_6s_large.png") 50% 0 no-repeat;
+	/*background-size: 100% auto;*/
+	position: absolute;
+	left: 49%;
+	top: 35%;
+	text-align: center;
+	/*bottom: 0;*/
+	/*margin: auto 0;*/
+	/*top: 39%;*/
+	
+	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+}
+.title h1{
+	height: 61px;
+	margin-bottom: 10px;
+}
+.title h2{
+	color: #333;
+	font-style: normal;
+	font-size: 40px;
+	font-family: inherit;
+	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+	line-height: 1.1;
+	font-weight: 200;
+	margin-bottom: 0.7em;
+	letter-spacing: -0.025em;
+}
+.title a{
+	margin: 0 10px;
+	font-size: 24px;
+}
+.title a, .adapter-recall-program{
+	/*text-decoration: none;*/
+	font-weight: 200;
+	font-style: normal;
+	font-family: inherit;
+	/*font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+	/*letter-spacing: normal;*/
+}
+/*.subtitle{
+	text-align: center;
+	margin-top: 100px;
+}*/
+#banner{
+	height: 200px;
+	/*background-size: contain;*/
+	/*background-origin: border-box;*/
+}
+#banner .image{
+	background-clip: content-box;
+	height: 100%;
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+#banner .watch{
+	background: url("../img/watch_large.jpg") 50% 0 no-repeat;
+}
+#banner .iPad{
+	background: url("../img/ipad_pro_large.jpg") 50% 0 no-repeat;
+}
+#banner .tv{
+	background: url("../img/appletv_large.jpg") 50% 0 no-repeat;
+}
+#banner .macbook{
+	background: url("../img/macbook_large.jpg") 50% 0 no-repeat;
+}
+#support-banner{
+	/*height: 75px;*/
+	padding: 25px 0;
+	/*width: 100%;*/
+	text-align: center;
+}
+.adapter-recall-program{
+	/*display: block;*/
+	/*margin: auto 0;*/
+	/*margin: 15px 0;*/
+	font-size: 16px;
+	font-weight: 300;
+	/*margin: auto 0;*/
+}
+footer{
+	background: #eee;
+	font-size: 0.7em;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+/*footer, footer a{
+	color: #777;	
+}*/
+footer h3{
+	color: #222;
+	font-weight: 500;
+}
+footer h3, footer li, footer p{
+	padding: 5px 0;
+} 
+#footer-nav{
+	border-bottom: 1px solid #ddd;
+}
+#footer-nav, #footer-about{
+	/*position: relative;*/
+	width: 1000px;
+	margin: 0 auto;
+	/*margin-top: 10px;*/
+}
+.columns{
+	margin-bottom: 30px;
+}
+
+
+.col{
+	float: left;
+	width: 20%;
+}
+
+.footer-nav-easy-shorcut{
+	clear: both;
+	/*margin-top: 30px;*/
+}
+.footer-nav-easy-shorcut, #footer-about{
+	padding: 10px 0;
+}
+.footer-nav-easy-shorcut, #footer-about li:first-child{
+	color: #aaa;
+}
+#footer-about li:not(:first-child){
+	padding-left: 12px;
+	padding-right: 12px;
+	/*padding-bottom: 10px;*/
+}
+#footer-about li img{
+	float: left;
+	position: relative;
+	top: -3px;
+	left: -3px;
+}
+.bordered{
+	border-right: 1px solid #ddd;
+}
+
+
+/*misc*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.columns a, #footer-about a{
+	color: #777;
+}
+.title a, .adapter-recall-program, .footer-nav-easy-shorcut a{
+	color: #08c;
 }
